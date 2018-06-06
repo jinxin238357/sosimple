@@ -1,0 +1,10 @@
+
+	<div class="post">
+		<div class="post-title">
+			<h3><%= link_to post.title,post %></h3>
+		</div>
+		<video id="video0" class="video" data-paused="false" controls>
+		<source src=<%= post.video_url %> type="video/webm">
+		Your browser does not support the video tag.
+		</video>
+	</div>

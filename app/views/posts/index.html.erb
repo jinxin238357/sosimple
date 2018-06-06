@@ -1,0 +1,27 @@
+<div id="products">
+  <%= render @posts %>
+</div>
+
+<%= will_paginate @products %>
+
+
+
+<div class="content">
+
+<%= render @posts %>
+<% for post in @posts %>
+  <div class="post">
+    <div class="post-title">
+      <h3><%= link_to post.title,post %></h3>
+    </div>
+    <video id="video0" controls>
+    <source src=<%= post.video_url %> type="video/webm">
+    Your browser does not support the video tag.
+    </video>
+  </div>
+<% end %>
+
+
+<%= will_paginate @posts %>
+
+</div>

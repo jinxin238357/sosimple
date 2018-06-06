@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>开心短视频 - 搞笑的短视频网站</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+
+
+
+  	<div>
+
+  	<header role="banner" class="Sticky AppHeader">
+  		<a href="/"><%= image_tag("logo.png")%></a>
+  	</header>
+  	</div>
+
+  	
+    <%= yield %>
+  </body>
+</html>
